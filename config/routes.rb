@@ -1,5 +1,35 @@
 Rails.application.routes.draw do
+
+  root 'bienvenido#floor_u'
+
+  get 'bienvenido/aboutus'
+
+  get 'bienvenido/legal'
+
+  get 'bienvenido/support'
+
   resources :tasks
+
+  resources :users do
+    resources :photos
+  end
+
+
+
+  resources :search do
+    resources :users
+  end
+
+  resources :products do
+      resources :comments
+      resources :sales do
+        get 'recent', on: :collection
+      end
+     end
+
+
+
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Appdemo</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'vendor/modernizr', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+
+
+<%= render 'layouts/bienvenido_header'%>
+     
+      <div class="row">
+        <div class="large-12 columns">
+        <div id="slider">
+          <img src="http://placehold.it/1000x400&text=[ img 1 ]"/>
+        </div>
+        
+        <hr/>
+        </div>
+      </div>
+      
+     
+     
+      <div class="row">
+      	<%= yield %>
+      
+        </div>
+        
+     
+    <div class="row">
+        <div class="large-12 columns">
+        
+          <div class="panel">
+            <h4>Get in touch!</h4>
+                
+            <div class="row">
+              <div class="large-9 columns">
+                <p>Estamos a su disposición, contacta con nosotros.</p>
+              </div>
+              <div class="large-3 columns">
+                <a href="#" class="radius button right">Contacto</a>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>       
+      
+<%= render 'layouts/bienvenido_footer'%>
+
+<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+</body>
+</html> 
+
+
+
+
