@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  root 'bienvenido#floor_u'
+  root 'bienvenido#aboutus'
 
   get 'bienvenido/aboutus'
 
