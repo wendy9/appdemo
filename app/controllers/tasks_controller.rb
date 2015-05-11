@@ -1,5 +1,9 @@
 class TasksController < ApplicationController
   before_action :set_task, only: [:show, :edit, :update, :destroy]
+<<<<<<< Updated upstream
+=======
+  layout 'bienvenido'
+>>>>>>> Stashed changes
 
   # GET /tasks
   # GET /tasks.json

@@ -1,5 +1,5 @@
 class BienvenidoController < ApplicationController
-	layout 'layouts/bienvenido'
+	layout 'layouts/bienvenido', except: ['aboutus']
 
 
 def floor_u
