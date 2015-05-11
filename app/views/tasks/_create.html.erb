@@ -1,0 +1,7 @@
+      <tr id="task<%=@task.id%>">
+        <td><%= @task.description %></td>
+        <td><%= @task.status %></td>
+        <td><%= link_to 'Muestra', @task %></td>
+        <td><%= link_to 'Edita', edit_task_path(@task) %></td>
+        <td><%= link_to 'Elimina', @task, remote: :true, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>

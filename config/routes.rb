@@ -4,6 +4,14 @@ Rails.application.routes.draw do
 
   get 'bienvenido/aboutus'
 
+  get 'bienvenido/contacto'
+
+  get 'bienvenido/salon'
+
+  get 'bienvenido/bano'
+
+  get 'bienvenido/cocina'
+
   get 'bienvenido/legal'
 
   get 'bienvenido/support'

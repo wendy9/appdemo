@@ -13,4 +13,16 @@ end
 
   def support
   end
+
+  def salon
+  end
+
+  def baño
+  end
+
+  def cocina
+  end
+
+  def contacto
+  end
 end

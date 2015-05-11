@@ -1,4 +1,7 @@
-<h1>Listing tasks</h1>
+<div id="new_task">
+</div>
+
+<h1>COMENTA</h1>
 
 <table>
   <thead>
@@ -11,12 +14,12 @@
 
   <tbody>
     <% @tasks.each do |task| %>
-      <tr>
+      <tr id="task<%=task.id%>">
         <td><%= task.description %></td>
         <td><%= task.status %></td>
         <td><%= link_to 'Show', task %></td>
         <td><%= link_to 'Edit', edit_task_path(task) %></td>
-        <td><%= link_to 'Destroy', task, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Destroy', task, remote: :true, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -24,4 +27,5 @@
 
 <br>
 
-<%= link_to 'New Task', new_task_path %>
+
+
